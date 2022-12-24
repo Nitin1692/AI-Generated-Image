@@ -1,5 +1,5 @@
 const express = require('express')
-const app = express()
+const { generateImage } = require('../controllers/openaiConroller')
 const router = express.Router()
 
 router.post('/generateImage', generateImage)
